@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install:*)",
+      "Read(//Users/mohamed/.nvm/versions/node/**)",
+      "Bash(nvm --version)",
+      "Bash(pkill -f \"next dev\")"
+    ]
+  }
+}
