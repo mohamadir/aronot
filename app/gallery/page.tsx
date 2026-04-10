@@ -24,12 +24,7 @@ export default function GalleryPage() {
         }}
       >
         <span
-          style={{
-            fontSize: 13,
-            fontWeight: 500,
-            color: GOLD,
-            letterSpacing: 3,
-          }}
+          style={{ fontSize: 13, fontWeight: 500, color: GOLD, letterSpacing: 3 }}
         >
           תיק עבודות
         </span>
@@ -78,10 +73,7 @@ export default function GalleryPage() {
           }}
         >
           {CATEGORIES.map((cat, i) => (
-            <span
-              key={cat}
-              className={`category-chip${i === 0 ? " active" : ""}`}
-            >
+            <span key={cat} className={`category-chip${i === 0 ? " active" : ""}`}>
               {cat}
             </span>
           ))}
@@ -106,19 +98,34 @@ export default function GalleryPage() {
                     borderRadius: 16,
                     overflow: "hidden",
                     position: "relative",
-                    height: i % 3 === 0 ? 400 : 320,
-                    background: project.gradient,
+                    height: i % 3 === 0 ? 420 : 340,
                     cursor: "pointer",
+                    background: project.gradient,
                   }}
                 >
+                  {/* Photo */}
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    style={{
+                      position: "absolute",
+                      inset: 0,
+                      width: "100%",
+                      height: "100%",
+                      objectFit: "cover",
+                    }}
+                  />
+                  {/* Gradient overlay */}
                   <div
                     style={{
                       position: "absolute",
                       inset: 0,
                       background:
-                        "linear-gradient(to top, rgba(0,0,0,0.75) 0%, transparent 55%)",
+                        "linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.1) 50%, transparent 100%)",
                     }}
                   />
+                  {/* Info */}
                   <div
                     style={{
                       position: "absolute",
@@ -148,6 +155,7 @@ export default function GalleryPage() {
                         fontWeight: 700,
                         color: "#fff",
                         marginTop: 8,
+                        textShadow: "0 1px 6px rgba(0,0,0,0.5)",
                       }}
                     >
                       {project.title}
@@ -162,20 +170,11 @@ export default function GalleryPage() {
 
       {/* CTA */}
       <section
-        style={{
-          padding: "80px 24px",
-          background: DARK,
-          textAlign: "center",
-        }}
+        style={{ padding: "80px 24px", background: DARK, textAlign: "center" }}
       >
         <Reveal>
           <span
-            style={{
-              fontSize: 13,
-              fontWeight: 500,
-              color: GOLD,
-              letterSpacing: 3,
-            }}
+            style={{ fontSize: 13, fontWeight: 500, color: GOLD, letterSpacing: 3 }}
           >
             הפרויקט הבא
           </span>

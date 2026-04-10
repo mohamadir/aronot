@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import GoldButton from "@/components/ui/GoldButton";
-import { GOLD, DARK } from "@/lib/constants";
+import { GOLD, DARK, BUSINESS_NAME } from "@/lib/constants";
 
 const NAV_LINKS = [
   { href: "/", label: "דף הבית" },
@@ -74,7 +74,7 @@ export default function Header() {
               transition: "color 0.3s",
             }}
           >
-            <span style={{ color: GOLD }}>◆</span> ארונות פרימיום
+            <span style={{ color: GOLD }}>◆</span> {BUSINESS_NAME}
           </Link>
 
           {/* Desktop nav */}

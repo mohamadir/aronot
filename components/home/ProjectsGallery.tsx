@@ -55,20 +55,34 @@ export default function ProjectsGallery({
                   overflow: "hidden",
                   position: "relative",
                   height: i % 3 === 0 ? 380 : 300,
-                  background: project.gradient,
                   cursor: "pointer",
+                  background: project.gradient,
                 }}
               >
+                {/* Photo */}
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  style={{
+                    position: "absolute",
+                    inset: 0,
+                    width: "100%",
+                    height: "100%",
+                    objectFit: "cover",
+                    transition: "transform 0.6s cubic-bezier(0.16,1,0.3,1)",
+                  }}
+                />
                 {/* Gradient overlay */}
                 <div
                   style={{
                     position: "absolute",
                     inset: 0,
                     background:
-                      "linear-gradient(to top, rgba(0,0,0,0.7) 0%, transparent 50%)",
+                      "linear-gradient(to top, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0.1) 55%, transparent 100%)",
                   }}
                 />
-                {/* Project info */}
+                {/* Info */}
                 <div
                   style={{
                     position: "absolute",
@@ -83,7 +97,7 @@ export default function ProjectsGallery({
                       fontSize: 12,
                       fontWeight: 500,
                       color: GOLD,
-                      background: "rgba(0,0,0,0.4)",
+                      background: "rgba(0,0,0,0.45)",
                       padding: "4px 12px",
                       borderRadius: 20,
                       marginBottom: 8,
@@ -97,6 +111,7 @@ export default function ProjectsGallery({
                       fontSize: 22,
                       fontWeight: 700,
                       color: "#fff",
+                      textShadow: "0 1px 4px rgba(0,0,0,0.4)",
                     }}
                   >
                     {project.title}

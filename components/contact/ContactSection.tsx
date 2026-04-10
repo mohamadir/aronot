@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Reveal from "@/components/ui/Reveal";
 import GoldButton from "@/components/ui/GoldButton";
-import { GOLD, DARK, BG, MUTED, WHATSAPP_NUMBER } from "@/lib/constants";
+import { GOLD, DARK, BG, MUTED, WHATSAPP_NUMBER, PHONE_DISPLAY } from "@/lib/constants";
 
 export default function ContactSection() {
   const [form, setForm] = useState({
@@ -192,7 +192,7 @@ export default function ContactSection() {
                     textAlign: "right",
                   }}
                 >
-                  054-123-4567
+                  {PHONE_DISPLAY}
                 </div>
               </div>
 

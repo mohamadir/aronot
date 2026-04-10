@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { GOLD, DARK } from "@/lib/constants";
+import { GOLD, DARK, BUSINESS_NAME } from "@/lib/constants";
 
 const FOOTER_LINKS = [
   { href: "/", label: "דף הבית" },
@@ -30,7 +30,7 @@ export default function Footer() {
         }}
       >
         <div style={{ fontSize: 20, fontWeight: 900, color: "#fff" }}>
-          <span style={{ color: GOLD }}>◆</span> ארונות פרימיום
+          <span style={{ color: GOLD }}>◆</span> {BUSINESS_NAME}
         </div>
 
         <nav
@@ -56,7 +56,7 @@ export default function Footer() {
           color: "rgba(255,255,255,0.3)",
         }}
       >
-        כל הזכויות שמורות © 2024 ארונות פרימיום
+        כל הזכויות שמורות © 2024 מ.מ ארונות
       </div>
     </footer>
   );

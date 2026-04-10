@@ -9,7 +9,7 @@ import Testimonials from "@/components/home/Testimonials";
 import ContactSection from "@/components/contact/ContactSection";
 
 export const metadata: Metadata = {
-  title: "ארונות פרימיום — עיצוב, ייצור והתקנה",
+  title: "מ.מ ארונות — עיצוב, ייצור והתקנה",
   description:
     "עיצוב, ייצור והתקנה של ארונות בהתאמה אישית מלאה. 15+ שנות ניסיון, 2000+ פרויקטים, 5 שנות אחריות.",
 };

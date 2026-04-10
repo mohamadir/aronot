@@ -8,6 +8,7 @@ export interface Project {
   title: string;
   cat: string;
   gradient: string;
+  image: string;
 }
 
 export interface Testimonial {
