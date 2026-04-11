@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import DesignConfigurator from "./DesignConfigurator";
-import KitchenConfigurator from "./KitchenConfigurator";
+import KitchenBuilder from "./KitchenBuilder";
 import { GOLD, DARK } from "@/lib/constants";
 
 type Tab = "closet" | "kitchen";
@@ -105,7 +105,7 @@ export default function DesignPageClient() {
       </div>
 
       {/* ── Active configurator ── */}
-      {tab === "closet" ? <DesignConfigurator /> : <KitchenConfigurator />}
+      {tab === "closet" ? <DesignConfigurator /> : <KitchenBuilder />}
     </div>
   );
 }
