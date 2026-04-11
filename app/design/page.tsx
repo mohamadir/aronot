@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
-import DesignConfigurator from "@/components/design/DesignConfigurator";
+import DesignPageClient from "@/components/design/DesignPageClient";
 
 export const metadata: Metadata = {
-  title: "עיצוב אישי — בנו את הארון שלכם",
+  title: "עיצוב אישי — בנו את הארון או המטבח שלכם",
   description:
-    "כלי העיצוב האינטראקטיבי שלנו — בחרו מידות, חומרים ותוכן פנים ושלחו את העיצוב ישירות אלינו.",
+    "כלי העיצוב האינטראקטיבי שלנו — בחרו מידות, חומרים ופריסה לארון חדר או מטבח ושלחו את העיצוב ישירות אלינו.",
 };
 
 export default function DesignPage() {
-  return <DesignConfigurator />;
+  return <DesignPageClient />;
 }

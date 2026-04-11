@@ -111,6 +111,14 @@ export const SERVICES = [
   },
 ];
 
+export const COUNTERTOPS = [
+  { id: "concrete", name: "בטון מוחלק", color: "#A8A5A0" },
+  { id: "granite",  name: "גרניט שחור", color: "#2C2C2C" },
+  { id: "marble",   name: "שיש לבן",    color: "#F0EEEB" },
+  { id: "wood",     name: "עץ טבעי",    color: "#C4A26E" },
+  { id: "quartz",   name: "קוורץ לבן",  color: "#E8E5E0" },
+];
+
 export const PROCESS_STEPS = [
   { num: "01", title: "פגישת ייעוץ", desc: "נפגשים, מבינים צרכים ומתכננים יחד" },
   { num: "02", title: "עיצוב תלת-ממדי", desc: "מעצבים את הארון שלכם עם תצוגה מקדימה" },

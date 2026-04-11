@@ -378,46 +378,10 @@ export default function DesignConfigurator() {
   return (
     <div
       style={{
-        minHeight: "100vh",
         background: BG,
-        paddingTop: 72,
         fontFamily: "var(--font-heebo), Heebo, sans-serif",
       }}
     >
-      {/* Page header */}
-      <div
-        className="anim-fade-in"
-        style={{
-          background: DARK,
-          padding: "48px 24px 40px",
-          textAlign: "center",
-        }}
-      >
-        <span style={{ fontSize: 13, fontWeight: 500, color: GOLD, letterSpacing: 3 }}>
-          כלי העיצוב האישי
-        </span>
-        <h1
-          style={{
-            fontSize: "clamp(28px,4vw,44px)",
-            fontWeight: 900,
-            color: "#fff",
-            marginTop: 8,
-          }}
-        >
-          עצבו את הארון <span style={{ color: GOLD }}>המושלם</span> שלכם
-        </h1>
-        <p
-          style={{
-            fontSize: 16,
-            fontWeight: 300,
-            color: "rgba(255,255,255,0.5)",
-            marginTop: 8,
-          }}
-        >
-          בחרו מידות, צבעים ותכולה — הארון מתעדכן בזמן אמת
-        </p>
-      </div>
-
       {/* Main grid */}
       <div
         style={{
